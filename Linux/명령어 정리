@@ -1,0 +1,79 @@
+ls
+현재 디렉토리의 파일 목록을 출력하는 명령어. 'ls -l'은 자세히 보기
+
+pwd
+현재 위치하고 있는 디렉토리를 알려주는 명령어
+
+mkdir
+mkdir 새로 생성할 디렉토리명
+
+cd
+cd 이동할 디렉토리의 경로명
+
+rm
+rm 파일명
+rm -r 디렉토리명
+
+--help
+명령어 뒤에 --help를 붙이면 명령의 사용설명서가 출력됩니다.
+
+
+man 명령어
+메뉴얼 보기
+
+
+cp 복사파일 복사경로
+mv 이동파일 이동경로
+http://shinboard.net/archives/4097
+
+sudo
+(Super User DO)
+루트 권한으로
+
+apt yum
+패키지 메니저
+
+wget
+파일 다운로드
+
+|
+파이프 라인 연결하여 아웃풋을 인풋으로
+
+grep
+해당 텍스트가 있는 구문을 출력 (ex for 메뉴얼 빠른사용)
+
+ps
+프로세스의 리스트
+
+(IO Redirection)
+https://slideplayer.com/slide/5126304
+
+ls -l > result.txt
+> 를 통해 아웃풋 방향을 지정
+기본적으로 > 바로 앞에 1이 생략인데 이건 stdout standard output을 의미
+2> 이런식으로 해주면 에러메시지에만 해당 (ex  rm abc.txt 2> error.log  이런 식으로 stderr가 갈곳을 지정가능)
+rm abc.txt 1>haha.txt 2> error.log   같이 사용
+
+ls -l >> result.txt
+출력값을 기존의 파일 뒤에 append
+
+cat < linux.txt
+stdin 으로서 cat 프로그램에 값을 주입
+
+head -nx abc.txt
+x줄 만큼만 출력
+
+head -nx < abc.txt > def.txt
+abc.txt x줄만큼 위에서 잘라서 def.txt에 출력
+
+mail abc@abc.com << flag
+> Hi
+> I'm
+> Hoho
+> flag
+flag는 동적인 약속 문자일 뿐이며 중간의 세줄의 요소가 어팬딩되며 인풋된다.
+
+ls -al > /dev/null
+출력될 정보를 버리게 함
+
+chmod rwx 권한변경
